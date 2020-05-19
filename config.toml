@@ -1,0 +1,4 @@
+baseURL = "https://lurey.dev/"
+languageCode = "en-us"
+title = "Lurey dot Dev"
+theme = "Anubis"
