@@ -2,3 +2,10 @@ baseURL = "https://lurey.dev/"
 languageCode = "en-us"
 title = "Lurey dot Dev"
 theme = "anubis"
+
+enableRobotsTXT = true
+googleAnalytics = "UA-174916923-1"
+
+[params]
+  author = "Matan Lurey"
+  dateFormat = "2020-01-02"
