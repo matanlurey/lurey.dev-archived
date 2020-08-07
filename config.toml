@@ -7,5 +7,6 @@ enableRobotsTXT = true
 googleAnalytics = "UA-174916923-1"
 
 [params]
-  author = "Matan Lurey"
-  dateFormat = "2020-01-02"
+author = "Matan Lurey"
+description = "Tech and Culture Musings"
+dateFormat = "2020-01-02"
