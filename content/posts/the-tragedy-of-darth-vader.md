@@ -10,7 +10,7 @@ tags:
 
 A little known fact is that [Darth Vader][], the primary antagonist in the
 original Star Wars trilogy (and a primary protagonist in the prequel trilogy)
-has been referred to by no other than George Lucas as the centerpoint of the
+has been referred to by no other than George Lucas as the center-point of the
 first six films - as ["the tragedy of Darth Vader"][].
 
 [darth vader]: https://en.wikipedia.org/wiki/Darth_Vader
@@ -61,7 +61,7 @@ extremely high - a few 6 dice pierce 3 attacks can (hypothetically) table an
 opponent:
 
 On the flip side, Vader is somewhat unique in that his ability to do
-_next to nothing_ is _also_ high. This has a two-progned effect on the game -
+_next to nothing_ is _also_ high. This has a two-pronged effect on the game -
 when selecting an army, Darth Vader is the hardest _individual_ core-box
 commander to play (see [comparisons](#comparisons)), and _thematically_ he
 plays quite different from what you'd probably expect.
@@ -103,6 +103,8 @@ always that useful:
   you might as well pretend there only is 1 free upgrade slot and that Vader
   costs an extra 15 points base.
 
+[force push]: https://starwarslegion.fandom.com/wiki/Force_Push
+[force choke]: https://starwarslegion.fandom.com/wiki/Force_Choke
 [saber throw]: https://starwarslegion.fandom.com/wiki/Saber_Throw
 
 {{< figure src="/vader-being-pulled.png" caption="What it typically feels like playing Darth Vader by Turn 5 and 6" >}}
@@ -131,9 +133,10 @@ to have a 1/9th, 1/8th, 1/7th, 1/6th (etc) chance of drawing Darth Vader and
 getting the opportunity to go again.
 
 In practice, I think this was supposed to incentivize holding Vader until later
-in the round (to incrase the chance of pulling his token quickly and going twice
-in a row), but it's not typically what you want with a 1-pip, and suffering a
-wound on your most important piece to do this adds further insult to injury.
+in the round (to increase the chance of pulling his token quickly and going
+twice in a row), but it's not typically what you want with a 1-pip, and
+suffering a wound on your most important piece to do this adds further insult to
+injury.
 
 ### Vader's Might
 
@@ -213,11 +216,11 @@ Master of Evil does three _excellent_ things (at least compared to other cards):
 
 1. It gives you an order-phase dodge token. With a limited access to surge
    tokens or reliable dodge tokens, this is your "oh shit" card - bumping up
-   Vader's surviability _significantly_ against a first strike.
+   Vader's survivability _significantly_ against a first strike.
 2. It has a more difficult to land but powerful\* effect on delivering 3
    suppression tokens to every enemy unit at range 1-2.
 3. It remembers you have _other units_ in your army other than Darth Vader. This
-   shouldn't be too suprising, but even _operatives_ like [Sabine Wren][] have
+   shouldn't be too surprising, but even _operatives_ like [Sabine Wren][] have
    more consistent access to command cards that issue orders than Darth Vader.
 
 You will take Master of Evil in every list with Vader.
@@ -240,7 +243,7 @@ Darkness Descends was one of the most hyped up cards prior to the official
 operative Vader release - it was going to give the slowest commander in the game
 access to a rapid deployment via a combination of `Infiltrate` and `Scout: 1`,
 removing woes about Darth Vader doing little in early turns of the game and
-gettin him in the action quickly. But did it?
+getting him in the action quickly. But did it?
 
 I'd argue no:
 
@@ -250,7 +253,7 @@ I'd argue no:
    balancing out this loss. Read ahead, but I don't think the effects you gain
    by revealing this card (and effectively losing a command card for the rest
    of the game) is worth it.
-2. For `Dilvuge` cards produced so far (Padme's [Diplomatic Cover] and Bane's
+2. For `Divulge` cards produced so far (Padme's [Diplomatic Cover] and Bane's
    [I Make The Rules Now][]), this is the only card that the ability or effect
    you are granted by _not_ divulging it isn't interesting. I can almost hear it
    now in Director Krennic's voice: _"Two surge tokens? A man of your talent?"_.
@@ -279,7 +282,7 @@ I'd argue no:
 
 ## Army Synergy {#synergy}
 
-Ultimtaely, a lot of the qualms of Darth Vader are still relatively minor: he is
+Ultimately, a lot of the qualms of Darth Vader are still relatively minor: he is
 _still_, despite all of the negatives able to make powerful plays that can swing
 the entire game (assuming you play [all 6 turns](#turn-6)). However, a roughly
 ~210 point investment in a single unit means you are relying on fitting quality
@@ -294,7 +297,7 @@ Here are some typical lists:
 
 This fairly standard 10-activation list is a fairly standard gunline that swaps
 out a sniper strike team for [Imperial Royal Guards][], which gives Vader a nice
-surviability bump as well as a fun target for `New Ways to Motivate Them`
+survivability bump as well as a fun target for `New Ways to Motivate Them`
 (charging IRG with 3 move actions and tenacity is extremely fun).
 
 You can swap between upgrades and core units, or even experiment with including
@@ -327,7 +330,7 @@ hunting for Veers or the Officer to do reliable damage.
 {{< figure src="/vader/list-with-dewbacks.jpg" caption="Vader becomes King Theoden in this Riders of Rohan Remake List" >}}
 
 A more fringe list, but still effective, is concentrating most of your offensive
-capabiltiy on `New Ways to Motivate Them` and three hungry, hungry hippos. It is
+capability on `New Ways to Motivate Them` and three hungry, hungry hippos. It is
 going to be less effective against certain lists and strategies, but sort of
 rides on the tactic of an overwhelming amount of fast, hardy melee units that
 most players are not used to dealing with.
@@ -398,8 +401,9 @@ In comparison to Vader:
   that he can't afford to tank ranged attacks else risk panic or losing actions;
   however his 1-pip, [Trained in Your Jedi Arts][] can sometimes win a game!
 - The Droid faction has plenty of access to cheap, effective units that don't
-  rely on a specific commander to play reasonble. That means that Grievous, like
-  probably _any_ CIS commander, can rely more on the army list than Vader can.
+  rely on a specific commander to play reasonable. That means that Grievous,
+  like probably _any_ CIS commander, can rely more on the army list than Vader
+  can.
 - His command card upgrades might as well read "Aggressive Tactics,
   Strict Orders", which in turn means "give out 4 surge tokens and remove a
   suppression token without rolling". If Vader could give out 24 surge tokens
@@ -450,7 +454,7 @@ In comparison to Vader:
 
 - Palpatine's defensive capabilities thanks to a native `Surge: Block`, the
   Imperial Royal Guards with `Entourage`, and [Give in to Your Anger][] as the
-  ultimate interrupt help him stay comparble to Vader.
+  ultimate interrupt help him stay comparable to Vader.
 - If you manage to stay healthy (or take advantage of medics),
   [And Now... You Will Die][] can easily make up for doing less during the first
   several rounds of the game. It's not uncommon for this card to win the game.
@@ -480,9 +484,9 @@ In comparison to Vader:
 - Count Dooku has three _excellent_ command cards patching up vulnerabilities in
   his kit: [Fear, Surprise, Intimidation][] can deliver an 8-dice pierce 3
   range 2 attack, or even just be used in melee to split attack saber/lightning,
-  [Double the Fall][] can disable another threat at range-2, all but guranteeing
-  Dooku _still_ goes first thank to strong Droid synergy, and
-  [You Dissapoint Me][] helps Dooku close the gap and up his defenses.
+  [Double the Fall][] can disable another threat at range-2, all but
+  guaranteeing Dooku _still_ goes first thank to strong Droid synergy, and
+  [You Disappoint Me][] helps Dooku close the gap and up his defenses.
 - A combination of `Cunning` and `Makashi Mastery` gives Dooku the edge against
   most other lightsaber wielders. If you manage an attack on already injured
   unit, Dooku can often land the kill, even if they have `Immune: Pierce`.
@@ -495,7 +499,7 @@ In comparison to Vader:
 
 [fear, surprise, intimidation]: https://starwarslegion.fandom.com/wiki/Fear,_Surprise,_Intimidation
 [double the fall]: https://starwarslegion.fandom.com/wiki/Double_the_Fall
-[you dissapoint me]: https://starwarslegion.fandom.com/wiki/You_Disappoint_Me
+[you disappoint me]: https://starwarslegion.fandom.com/wiki/You_Disappoint_Me
 
 Dooku is definitely a bit harder to play than some of the other commanders in
 this list, but it's hard _not_ to look longingly over to the other side of the
@@ -523,7 +527,7 @@ a tight schedule). Every game you didn't make it to turn 6 (or even worse,
 turn 5) is probably a game where Vader would have done next to nothing.
 
 Thanks to Vader's lack of speed and mobility, you're mostly reliant on slowly
-moving up the board as safely as you can until you position for a devestating
+moving up the board as safely as you can until you position for a devastating
 last couple turns. But if there _are_ no last couple turns, he is capable of
 effectively doing _nothing_ - that is, taking someone like [Iden Versio][] and
 a few supporting cast members is _blanket_ better, unconditionally.
