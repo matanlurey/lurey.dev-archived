@@ -1,7 +1,7 @@
 ---
 title: "The Tragedy of Darth Vader"
 date: 2020-10-18T11:06:26-07:00
-draft: true
+draft: false
 tags:
   - Star Wars Legion
 ---
