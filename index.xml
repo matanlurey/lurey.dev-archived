@@ -1,4 +1,495 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lurey dot Dev</title><link>https://lurey.dev/</link><description>Lurey dot Dev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 07 Aug 2020 12:48:03 -0700</lastBuildDate><atom:link href="https://lurey.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>A New Hope</title><link>https://lurey.dev/posts/welcome/</link><pubDate>Fri, 07 Aug 2020 12:48:03 -0700</pubDate><guid>https://lurey.dev/posts/welcome/</guid><description>&lt;p>&lt;img src="https://lurey.dev/lego_landspeeder.jpg" alt="Lego Star Wars Landspeeder">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lurey dot Dev</title><link>https://lurey.dev/</link><description>Lurey dot Dev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Oct 2020 11:06:26 -0700</lastBuildDate><atom:link href="https://lurey.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>The Tragedy of Darth Vader</title><link>https://lurey.dev/posts/the-tragedy-of-darth-vader/</link><pubDate>Sun, 18 Oct 2020 11:06:26 -0700</pubDate><guid>https://lurey.dev/posts/the-tragedy-of-darth-vader/</guid><description>&lt;p>&lt;img src="https://lurey.dev/darth-vader-flowers.jpg" alt="Darth Vader Holding a Purple Flower Bouquet">&lt;/p>
+&lt;p>A little known fact is that &lt;a href="https://en.wikipedia.org/wiki/Darth_Vader">Darth Vader&lt;/a>, the primary antagonist in the
+original Star Wars trilogy (and a primary protagonist in the prequel trilogy)
+has been referred to by no other than George Lucas as the center-point of the
+first six films - as &lt;a href="https://en.wikipedia.org/wiki/Darth_Vader#cite_note-tragedy-4">&amp;ldquo;the tragedy of Darth Vader&amp;rdquo;&lt;/a>.&lt;/p>
+&lt;p>In &lt;a href="https://www.fantasyflightgames.com/en/products/star-wars-legion/">Star Wars Legion&lt;/a>, Fantasy Flight Games most successful foray into
+a tabletop miniatures game, Vader was the first commander created for the
+Galactic Empire faction, and one of the most iconic looking units in the game:&lt;/p>
+&lt;p>&lt;img src="https://lurey.dev/darth-vader-legion-mini.jpg" alt="A very well-painted Darth Vader miniature">&lt;/p>
+&lt;p>Unfortunately, the terrifying looking Dark Lord just doesn&amp;rsquo;t deliver in the game
+and this blog will go more into why Darth Vader (as of time of this writing,
+October 2020) falls short of a competitive piece.&lt;/p>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader-versus-rex-tts.png"
+alt="Darth Vader, waiting to activate, against Rex and Phase IIs"/> &lt;figcaption>
+&lt;p>Darth Vader, waiting to activate, against Rex and Phase IIs&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Is this a now familiar sight to Vader players? Hiding behind a terrain piece,
+wounded to brink of defeat, terrified of units that cost a third as much of the
+Sith? If it &lt;em>isn&amp;rsquo;t&lt;/em>, then please invite me to your next game night once COVID
+is over.&lt;/p>
+&lt;p>Let&amp;rsquo;s take a look at &lt;em>Commander&lt;/em> Vader&amp;rsquo;s unit card, stats, and command cards
+(&lt;em>note that all images and content are copyright Fantasy Flight
+Games/Disney/etc&lt;/em> and are for reference purposes only):&lt;/p>
+&lt;p>&lt;img src="https://lurey.dev/darth-vader-unit-card.png" alt="Commander Darth Vader in Star Wars Legion">&lt;/p>
+&lt;p>At &lt;em>8&lt;/em> wounds, &lt;em>3&lt;/em> force upgrade slots, &lt;code>Master of the Force&lt;/code>, &lt;code>Relentless&lt;/code>, and
+a dizzying 6-red attack with &lt;code>Impact: 3&lt;/code> and &lt;code>Pierce: 3&lt;/code>, and &lt;em>infinite&lt;/em>
+courage; Darth Vader has some of the strongest individual stats in the game.
+Plus, Vader has access to &lt;strong>six&lt;/strong> command cards, one of two units in the game
+(Luke Skywalker is the other) that can do so.&lt;/p>
+&lt;p>&lt;strong>However&lt;/strong>, there are two elements that keep Lord Vader on the asthmatic
+old-dude side of most competitive games: &lt;em>army synergy&lt;/em> and
+&lt;em>individual impact in typical games&lt;/em>. Let&amp;rsquo;s start with the latter.&lt;/p>
+&lt;h2 id="individual-impact">Individual Impact&lt;/h2>
+&lt;p>Vader is one of those units commonly referred to as &amp;ldquo;high ceiling, low floor&amp;rdquo;,
+which means the &lt;em>potential&lt;/em> ability for Darth Vader to infleunce the game is
+extremely high - a few 6 dice pierce 3 attacks can (hypothetically) table an
+opponent:&lt;/p>
+&lt;p>On the flip side, Vader is somewhat unique in that his ability to do
+&lt;em>next to nothing&lt;/em> is &lt;em>also&lt;/em> high. This has a two-pronged effect on the game -
+when selecting an army, Darth Vader is the hardest &lt;em>individual&lt;/em> core-box
+commander to play (see &lt;a href="#comparisons">comparisons&lt;/a>), and &lt;em>thematically&lt;/em> he
+plays quite different from what you&amp;rsquo;d probably expect.&lt;/p>
+&lt;figure>
+&lt;img src="https://lurey.dev/reagan-raptor.jpg"
+alt="Meanwhile, Rebel Tauntaun Riders play more like this."/> &lt;figcaption>
+&lt;p>Meanwhile, Rebel Tauntaun Riders play more like this.&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>First, what does 6 red, without any surge tokens or surge to crit, look like? In
+melee, Vader averages (&lt;code>6/8 * 6&lt;/code>) 4.5 &lt;em>hits&lt;/em>, and with &lt;code>Pierce: 3&lt;/code> is almost
+always &lt;a href="https://rollcrits.com/6r/impact:3,pierce:3,surge:blank/?iterations=10000&amp;amp;defenders=standard&amp;amp;randomSeed=wjXnIXhU8I">guaranteed to &lt;em>land&lt;/em> those hits as wounds&lt;/a>:&lt;/p>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader-doing-wounds.png"
+alt="Vader is landing usually between 2 and 3 guaranteed wounds"/> &lt;figcaption>
+&lt;p>Vader is landing usually between 2 and 3 guaranteed wounds&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>And that looks extremely good, until you realize that it&amp;rsquo;s only in melee, and
+you have one of two of the &lt;em>only&lt;/em> &lt;code>Speed: 1&lt;/code> units in the game (the other being
+&lt;a href="#palpatine">Emperor Palpatine&lt;/a>). So your standard threat range looks like this:&lt;/p>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader-two-moves.png"
+alt="A bit shy of 8 inches"/> &lt;figcaption>
+&lt;p>A bit shy of 8 inches&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>You can read &lt;a href="https://thefifthtrooper.com/darth-vader-dark-lord-of-the-sith/">Mike Barry&amp;rsquo;s excellent analysis&lt;/a>
+for some more details, as well as how to slightly extend Vader&amp;rsquo;s range and
+threat with &lt;em>Force Push&lt;/em>, but this blog is primarily about Vader &lt;em>in comparison&lt;/em>
+to other commanders, so I won&amp;rsquo;t expand further. Needless to say, it&amp;rsquo;s certainly
+&lt;em>possible&lt;/em> to get Vader up the field and into melee where he wants to be - but
+it&amp;rsquo;s &lt;em>not easy&lt;/em>, &lt;em>not intuitive&lt;/em>, and doesn&amp;rsquo;t &lt;em>feel like&lt;/em> a Dark Lord of the
+Sith.&lt;/p>
+&lt;p>A few final points: you are paying (via point costs and the restrictions of list
+building in Empire generally) a premium for keywords and abilities that aren&amp;rsquo;t
+always that useful:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Pierce 3&lt;/code> is often overkill; it&amp;rsquo;s not rare as Darth Vader to &lt;em>intentionally&lt;/em>
+pierce less dice in order to stay protected in melee. The only real time you
+might want the full value is against an &lt;code>Impervious&lt;/code> hero such as Sabine or
+a tougher vehicle such as an AAT or Saber.&lt;/li>
+&lt;li>&lt;code>Relentless&lt;/code> only is a benefit over &lt;code>Charge&lt;/code> if you take &lt;a href="https://starwarslegion.fandom.com/wiki/Saber_Throw">Saber Throw&lt;/a>; and
+3 red dice, even with pierce 3, often can translate to &amp;ldquo;deals 1 suppression&amp;rdquo;
+when dealing with heavy cover.&lt;/li>
+&lt;li>Vader is always taking &lt;a href="https://starwarslegion.fandom.com/wiki/Force_Push">Force Push&lt;/a> and almost always &lt;a href="https://starwarslegion.fandom.com/wiki/Force_Choke">Force Choke&lt;/a>, so
+you might as well pretend there only is 1 free upgrade slot and that Vader
+costs an extra 15 points base.&lt;/li>
+&lt;/ul>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader-being-pulled.png"
+alt="What it typically feels like playing Darth Vader by Turn 5 and 6"/> &lt;figcaption>
+&lt;p>What it typically feels like playing Darth Vader by Turn 5 and 6&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="command-cards">Command Cards&lt;/h2>
+&lt;p>Let&amp;rsquo;s jump into his command cards next, as a big component of why you would
+bring a Commander or Operative over several smaller hitters is (ostensibly) the
+value of their &lt;em>command cards&lt;/em> - a big component of the game of Legion.&lt;/p>
+&lt;h3 id="implacable">Implacable&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/1-pip-implacable.png"
+alt="Implacable: I just treat this card as Ambush with a gambling mechanic"/> &lt;figcaption>
+&lt;p>Implacable: I just treat this card as Ambush with a gambling mechanic&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>I &lt;em>think&lt;/em> &lt;code>Implacable&lt;/code> is supposed to represent Darth Vader making his way
+through the Tantive IV, or perhaps even this
+&lt;a href="https://www.youtube.com/watch?v=wxL8bVJhXCM">iconic scene&lt;/a> from Rogue One. It
+is a fairly standard 1-pip, giving Vader a coin-flip&amp;rsquo;s chance at going first
+against an adversary (well, except for &lt;a href="#dooku">Count Dooku&lt;/a> or
+&lt;a href="#palpatine">Emperor Palpatine&lt;/a> or Director Krennic).&lt;/p>
+&lt;p>Then, once you&amp;rsquo;ve completed your activation and have an otherwise full bag of
+order tokens (likely between 8 and 9, unless you&amp;rsquo;ve already lost several
+activations and are on your way to losing the game), you can &lt;em>suffer a wound&lt;/em>
+to have a 1/9th, 1/8th, 1/7th, 1/6th (etc) chance of drawing Darth Vader and
+getting the opportunity to go again.&lt;/p>
+&lt;p>In practice, I think this was supposed to incentivize holding Vader until later
+in the round (to increase the chance of pulling his token quickly and going
+twice in a row), but it&amp;rsquo;s not typically what you want with a 1-pip, and
+suffering a wound on your most important piece to do this adds further insult to
+injury.&lt;/p>
+&lt;h3 id="vaders-might">Vader&amp;rsquo;s Might&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/1-pip-vaders-might.png"
+alt="Vader&amp;amp;rsquo;s Might: Probably Vader&amp;amp;rsquo;s single best offensive command card"/> &lt;figcaption>
+&lt;p>Vader&amp;rsquo;s Might: Probably Vader&amp;rsquo;s single best offensive command card&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;code>Vader's Might&lt;/code> is an outright terrifying card for your opponent:&lt;/p>
+&lt;ul>
+&lt;li>It can extend Vader&amp;rsquo;s range by 6 inches (&amp;ldquo;range 1&amp;rdquo;) to land an attack&lt;/li>
+&lt;li>It can hurl units away from an objective, or friendly units towards one.&lt;/li>
+&lt;li>It can act as a &amp;ldquo;disengage&amp;rdquo; for Vader, freeing up the rest of his actions.&lt;/li>
+&lt;/ul>
+&lt;p>If you are taking Darth Vader, this is a must-take card (and unfortunately that
+also means you need to buy the &lt;a href="https://www.fantasyflightgames.com/en/products/star-wars-legion/products/darth-vader-operative-expansion/">Darth Vader Operative Expansion&lt;/a> in order to
+play it competitively). I don&amp;rsquo;t have anything negative to say about this card,
+and if Vader had additional cards similar to this one I wouldn&amp;rsquo;t have written
+this article.&lt;/p>
+&lt;h3 id="new-ways-to-motivate-them">New Ways to Motivate Them&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/2-pip-new-ways.png"
+alt="New Ways to Motivate Them: Powerful, but very situational"/> &lt;figcaption>
+&lt;p>New Ways to Motivate Them: Powerful, but very situational&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>One of the nicest parts about &lt;code>New Ways to Motivate Them&lt;/code> is that it &lt;em>doesn&amp;rsquo;t&lt;/em>
+require an order on the commander, which is fairly rare for most expensive named
+units, and it doesn&amp;rsquo;t have a maximum effect, meaning you could double up with
+&lt;a href="https://starwarslegion.fandom.com/wiki/HQ_Uplink">HQ Uplink&lt;/a> or other upgrades or effects that issue additional orders.&lt;/p>
+&lt;p>This card is best played as a way to efficiently interact with an objective
+(interact, move, move or move, interact, move or move, move, interact) or as a
+way for a multiwound unit like &lt;a href="https://starwarslegion.fandom.com/wiki/Imperial_Royal_Guards">Imperial Royal Guards&lt;/a>, &lt;a href="https://starwarslegion.fandom.com/wiki/Dewback_Rider">Dewback Riders&lt;/a>,
+or even &lt;a href="https://starwarslegion.fandom.com/wiki/Bossk">Bossk&lt;/a> to increase their threat range.&lt;/p>
+&lt;p>The downside? None of those units are particularly cheap, and you end up relying
+on multiple units (and Vader) being positioned well, and that your opponent does
+not have an obvious counters (or a cache of standby tokens).&lt;/p>
+&lt;p>It&amp;rsquo;s worth nearly always taking this card, but getting a peak benefit from it is
+(in my opinion) more difficult than the benefit gained by comparable units.&lt;/p>
+&lt;h3 id="fear-and-dead-men">Fear and Dead Men&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/2-pip-fear-and-dead-men.png"
+alt="Fear and Dead Men: Good at first sight, but ultimately sort of meh"/> &lt;figcaption>
+&lt;p>Fear and Dead Men: Good at first sight, but ultimately sort of meh&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>The first time I read &lt;code>Fear and Dead Men&lt;/code>, I was extremely excited: finally a
+way for Darth Vader to get his own cache of dodge tokens, and even a more
+powerful &lt;code>Deflect&lt;/code> as a result - neat! So what&amp;rsquo;s the problem(s)?&lt;/p>
+&lt;ul>
+&lt;li>You need to be within range 2 of units for this to do anything; unlike Luke&amp;rsquo;s
+2 pips (both of them), this doesn&amp;rsquo;t offer your help engaging - it&amp;rsquo;s a card
+that is only going to do (much) of anything if you&amp;rsquo;ve made it into close
+range already.&lt;/li>
+&lt;li>Some of the scariest units in the game easily operate at range 3 or 4,
+completely bypassing any sort of security you&amp;rsquo;d get by playing this card.&lt;/li>
+&lt;li>For a 2 pip, it&amp;rsquo;s quite rare to get &lt;em>zero control&lt;/em> over the rest of your
+army (more on that later in &lt;a href="#synergy">army synergy&lt;/a>).&lt;/li>
+&lt;li>Effects that only come into play when you take wounds are a mixed bag; an
+opponent is going to be &lt;em>elated&lt;/em> if they land a wound or two on Vader and
+suffer 2 wounds on say, Tauntaun Riders or B1 Battle Droids.&lt;/li>
+&lt;/ul>
+&lt;p>Fear and Dead Men is a situational card that is likely better suited as &lt;code>Push&lt;/code>
+in some lists (or other 2-pips when you manage to fit in another named unit
+like &lt;a href="https://starwarslegion.fandom.com/wiki/Iden_Versio">Iden Versio&lt;/a> or &lt;a href="https://starwarslegion.fandom.com/wiki/Bossk">Bossk&lt;/a>).&lt;/p>
+&lt;h3 id="master-of-evil">Master of Evil&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/3-pip-master-of-evil.png"
+alt="Master of Evil: Another excellent command card. More like this!"/> &lt;figcaption>
+&lt;p>Master of Evil: Another excellent command card. More like this!&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Master of Evil does three &lt;em>excellent&lt;/em> things (at least compared to other cards):&lt;/p>
+&lt;ol>
+&lt;li>It gives you an order-phase dodge token. With a limited access to surge
+tokens or reliable dodge tokens, this is your &amp;ldquo;oh shit&amp;rdquo; card - bumping up
+Vader&amp;rsquo;s survivability &lt;em>significantly&lt;/em> against a first strike.&lt;/li>
+&lt;li>It has a more difficult to land but powerful* effect on delivering 3
+suppression tokens to every enemy unit at range 1-2.&lt;/li>
+&lt;li>It remembers you have &lt;em>other units&lt;/em> in your army other than Darth Vader. This
+shouldn&amp;rsquo;t be too surprising, but even &lt;em>operatives&lt;/em> like &lt;a href="https://starwarslegion.fandom.com/wiki/Sabine_Wren">Sabine Wren&lt;/a> have
+more consistent access to command cards that issue orders than Darth Vader.&lt;/li>
+&lt;/ol>
+&lt;p>You will take Master of Evil in every list with Vader.&lt;/p>
+&lt;blockquote>
+&lt;p>*In earlier stages of the game, receiving 3 suppression could be game ending,
+panicking units off the board and objectives at best and almost guaranteeing
+that units close to the Dark Lord lose actions.&lt;/p>
+&lt;p>In the current meta almost every faction prioritizes units and strategies that
+make suppression bombs less useful do to a combination of &lt;code>Droid Trooper&lt;/code>,
+courage-2 core units, easy access to &lt;em>Strict Orders&lt;/em>, and more.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="darkness-descends">Darkness Descends&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/3-pip-darkness-descends.png"
+alt="Darkness Descends: Another bait and switch (good but actually not)"/> &lt;figcaption>
+&lt;p>Darkness Descends: Another bait and switch (good but actually not)&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Darkness Descends was one of the most hyped up cards prior to the official
+operative Vader release - it was going to give the slowest commander in the game
+access to a rapid deployment via a combination of &lt;code>Infiltrate&lt;/code> and &lt;code>Scout: 1&lt;/code>,
+removing woes about Darth Vader doing little in early turns of the game and
+getting him in the action quickly. But did it?&lt;/p>
+&lt;p>I&amp;rsquo;d argue no:&lt;/p>
+&lt;ol>
+&lt;li>This is what is now considered a &lt;code>Divulge&lt;/code> card, or a powerful effect that is
+only granted if you reveal the card during deployment, giving your opponent
+an advantage (they know what you are doing), with a supposed benefit
+balancing out this loss. Read ahead, but I don&amp;rsquo;t think the effects you gain
+by revealing this card (and effectively losing a command card for the rest
+of the game) is worth it.&lt;/li>
+&lt;li>For &lt;code>Divulge&lt;/code> cards produced so far (Padme&amp;rsquo;s &lt;a href="https://starwarslegion.fandom.com/wiki/Diplomatic_Cover">Diplomatic Cover&lt;/a> and Bane&amp;rsquo;s
+&lt;a href="https://starwarslegion.fandom.com/wiki/I_Make_the_Rules_Now">I Make The Rules Now&lt;/a>), this is the only card that the ability or effect
+you are granted by &lt;em>not&lt;/em> divulging it isn&amp;rsquo;t interesting. I can almost hear it
+now in Director Krennic&amp;rsquo;s voice: &lt;em>&amp;ldquo;Two surge tokens? A man of your talent?&amp;quot;&lt;/em>.&lt;/li>
+&lt;li>This card has a strange anti-synergy &lt;em>with&lt;/em> Darth Vader; in the commander
+configuration (the one we&amp;rsquo;re mostly looking at) you surrender an excellent
+army boosting card like &lt;a href="https://starwarslegion.fandom.com/wiki/Coordinated_Fire">Coordinated Fire&lt;/a>, and the activation control
+granted by &lt;a href="https://starwarslegion.fandom.com/wiki/Assault">Assault&lt;/a>.&lt;/li>
+&lt;li>The ability granted is much more situational and board dependent than you&amp;rsquo;d
+think at first glance. By requiring Vader be deployed last it becomes pretty
+trivial with a combination of &lt;code>Infiltrate&lt;/code> and scout 2-3 units (which are
+extremely common now) can box out deployments. When I read this card these
+days I mostly read &amp;ldquo;Give Vader Scout: 3&amp;rdquo; - which, while nice, is not up to
+the power level of most other commanders which are &lt;em>natively&lt;/em> fast enough not
+to care as much as Vader does.&lt;/li>
+&lt;li>Finally, Vader lists &lt;em>already&lt;/em> had a difficult time building up a decent
+activation count (9 is common, 10 is possible) and impactful command cards
+and this card &lt;em>guarantees&lt;/em> your opponent can lose priority with
+&lt;code>Standing Orders&lt;/code>, or win priority with a 2-pip for an alpha strike with no
+order control on the rest of your army as you gamble with activation tokens
+the rest of the round.&lt;/li>
+&lt;/ol>
+&lt;h2 id="synergy">Army Synergy&lt;/h2>
+&lt;p>Ultimately, a lot of the qualms of Darth Vader are still relatively minor: he is
+&lt;em>still&lt;/em>, despite all of the negatives able to make powerful plays that can swing
+the entire game (assuming you play &lt;a href="#turn-6">all 6 turns&lt;/a>). However, a roughly
+~210 point investment in a single unit means you are relying on fitting quality
+&lt;em>independent&lt;/em> activations in less than 600 points - something extremely tough
+for Empire to pull off.&lt;/p>
+&lt;p>Here are some typical lists:&lt;/p>
+&lt;h3 id="vader-and-irg">Vader and IRG&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/list-with-irg.jpg"
+alt="Pairs up Darth Vader with Imperial Royal Guards"/> &lt;figcaption>
+&lt;p>Pairs up Darth Vader with Imperial Royal Guards&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>This fairly standard 10-activation list is a fairly standard gunline that swaps
+out a sniper strike team for &lt;a href="https://starwarslegion.fandom.com/wiki/Imperial_Royal_Guards">Imperial Royal Guards&lt;/a>, which gives Vader a nice
+survivability bump as well as a fun target for &lt;code>New Ways to Motivate Them&lt;/code>
+(charging IRG with 3 move actions and tenacity is extremely fun).&lt;/p>
+&lt;p>You can swap between upgrades and core units, or even experiment with including
+something like &lt;a href="https://starwarslegion.fandom.com/wiki/Imperial_Special_Forces">Imperial Special Forces&lt;/a> to support an infiltrating Vader. The
+main problem with this list is that it doesn&amp;rsquo;t do anything - it&amp;rsquo;s a &amp;ldquo;jack of all
+trade lists&amp;rdquo; that is still going to suffer against high mobility armies,
+competent heavy armor like the AAT or Saber Tank, and is gunned down by more
+focused Veers/Shores or Rex/Clones.&lt;/p>
+&lt;h3 id="vader-and-veers">Vader and Veers&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/list-with-veers.jpg"
+alt="Pairs up Darth Vader with General Veers"/> &lt;figcaption>
+&lt;p>Pairs up Darth Vader with General Veers&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Another 10-activation list, this time relying a bit more on having an effective
+gunline by using a combination of &lt;a href="https://starwarslegion.fandom.com/wiki/HQ_Uplink">HQ Uplink&lt;/a> and &lt;a href="https://starwarslegion.fandom.com/wiki/Imperial_Discipline">Imperial Discipline&lt;/a> for
+order control, aim tokens, surge tokens, and suppression removal on the Shores.&lt;/p>
+&lt;p>I&amp;rsquo;ve seen and played variants of this list that go for more Stormtroopers and
+swap General Veers for a generic Imperial Officer, saving some points. Lists
+relying on &lt;em>electrobinoculars&lt;/em> for gunline effectiveness with Darth Vader have
+a tough time because Vader doesn&amp;rsquo;t really share orders - meaning that you&amp;rsquo;ll be
+hunting for Veers or the Officer to do reliable damage.&lt;/p>
+&lt;h3 id="vader-and-dewbacks">Vader and Dewbacks&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/list-with-dewbacks.jpg"
+alt="Vader becomes King Theoden in this Riders of Rohan Remake List"/> &lt;figcaption>
+&lt;p>Vader becomes King Theoden in this Riders of Rohan Remake List&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>A more fringe list, but still effective, is concentrating most of your offensive
+capability on &lt;code>New Ways to Motivate Them&lt;/code> and three hungry, hungry hippos. It is
+going to be less effective against certain lists and strategies, but sort of
+rides on the tactic of an overwhelming amount of fast, hardy melee units that
+most players are not used to dealing with.&lt;/p>
+&lt;h3 id="other-lists-and-synergy-notes">Other Lists and Synergy Notes&lt;/h3>
+&lt;p>There are certainly other lists Vader is capable of playing with, including some
+popularity with &lt;a href="https://starwarslegion.fandom.com/wiki/Bossk">Bossk&lt;/a>, &lt;a href="https://starwarslegion.fandom.com/wiki/Iden_Versio">Iden Versio&lt;/a>, and more.&lt;/p>
+&lt;p>Ultimately the problem still comes down to the fact that Darth Vader is hyper
+focused on getting into melee for safety (just not around Dooku, Palpatine, or
+basically any Jedi with access to force push), and the efficiency of the list
+around him is severely impacted - he can&amp;rsquo;t issue all-so-important aim or surge
+tokens to his army, or even order tokens when playing more of his cards.&lt;/p>
+&lt;p>It&amp;rsquo;s &lt;em>hard&lt;/em> to built a list around him, in a way that it probably would &lt;em>not&lt;/em> be
+if it was possible to take Darth Vader in another faction that have built-in
+independence (Clones), easy access to orders (Droids), or a variety of hard
+hitting support characters (Rebels).&lt;/p>
+&lt;h2 id="comparisons">Comparisons to other core-box Commanders&lt;/h2>
+&lt;p>This wouldn&amp;rsquo;t be a Vader-hate article without focusing on alternatives for new
+players - these are the commanders that players, especially newer ones, are
+looking at when considering playing Empire with Vader.&lt;/p>
+&lt;h3 id="luke">Luke Skywalker&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/luke-skywalker.png"
+alt="Luke Skywalker: Darth Vader&amp;amp;rsquo;s son packs a punch and then some"/> &lt;figcaption>
+&lt;p>Luke Skywalker: Darth Vader&amp;rsquo;s son packs a punch and then some&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Luke is the &lt;em>gold&lt;/em> standard for a core-box commander: he is independent, has
+high mobility thanks to &lt;code>Jump&lt;/code>, has a supporting set of command cards that issue
+dodge tokens to himself and allies, and even cards that help with suppression -
+and that is &lt;em>only&lt;/em> his core (non-Operative) cards - his operative cards &lt;em>kick&lt;/em>
+it up even farther with unique mechanics not available anywhere else.&lt;/p>
+&lt;p>In comparison to Vader:&lt;/p>
+&lt;ul>
+&lt;li>Command cards that are less situational, including those that make Luke nearly
+immune to damage, attack twice back to back, or even completely disable the
+ability of heroes like Palpatine or Dooku to attack at all, and even
+&lt;em>take control&lt;/em> of an enemy unit.&lt;/li>
+&lt;li>Easier access to navigate (and hide with) terrain, easier access to dodge
+tokens, and even the ability to use suppression as cover help make up the gap
+between 6 and 8 wounds.&lt;/li>
+&lt;li>Noticeably cheaper (~40-50 points in commander form) in a faction with more
+independent units like Tauntaun Riders and a supporting cast like Leia and
+Sabine.&lt;/li>
+&lt;/ul>
+&lt;p>Luke was a top-tier pick day 1 and with the notable exception of it being a bit
+more difficult to navigate with &lt;em>any&lt;/em> Jedi right now thanks to a proliferation
+of standby-Clones and heavy-hitting range-4 armor, continues to be excellent and
+&lt;em>feels&lt;/em> like Luke Skywalker.&lt;/p>
+&lt;h3 id="general-grievous">General Grievous&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/general-grievous.png"
+alt="General Grievous: A Cyborg that decided to retain the ability to run"/> &lt;figcaption>
+&lt;p>General Grievous: A Cyborg that decided to retain the ability to run&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>The only non-Jedi core-box commander, General Grievous manages to have a lot
+going for him: he has a devestating 8-dice attack, &lt;code>Relentless&lt;/code> with access to
+an auto-include blaster pistol that increases his already impressive threat
+range and provides &lt;code>Critical: 1&lt;/code>, speed-2 with &lt;code>Scale&lt;/code>, and most importantly a
+super synnergyistic &lt;em>two&lt;/em> command slots.&lt;/p>
+&lt;p>In comparison to Vader:&lt;/p>
+&lt;ul>
+&lt;li>Grievous does not have the strongest command cards, and his low courage means
+that he can&amp;rsquo;t afford to tank ranged attacks else risk panic or losing actions;
+however his 1-pip, &lt;a href="https://starwarslegion.fandom.com/wiki/Trained_in_Your_Jedi_Arts">Trained in Your Jedi Arts&lt;/a> can sometimes win a game!&lt;/li>
+&lt;li>The Droid faction has plenty of access to cheap, effective units that don&amp;rsquo;t
+rely on a specific commander to play reasonable. That means that Grievous,
+like probably &lt;em>any&lt;/em> CIS commander, can rely more on the army list than Vader
+can.&lt;/li>
+&lt;li>His command card upgrades might as well read &amp;ldquo;Aggressive Tactics,
+Strict Orders&amp;rdquo;, which in turn means &amp;ldquo;give out 4 surge tokens and remove a
+suppression token without rolling&amp;rdquo;. If Vader could give out 24 surge tokens
+in the course of a game we&amp;rsquo;d feel different about him!&lt;/li>
+&lt;/ul>
+&lt;p>Grievous has a lot of internal competition, like &lt;a href="#dooku">Count Dooku&lt;/a>, but is
+a strong pick that, aside from a low courage, is fairly straightforward to play.&lt;/p>
+&lt;h3 id="obi-wan-kenobi">Obi-Wan Kenobi&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/obi-wan.png"
+alt="Obi-Wan Kenobi: Somehow still a better Luke Skywalker. Who knew?"/> &lt;figcaption>
+&lt;p>Obi-Wan Kenobi: Somehow still a better Luke Skywalker. Who knew?&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Obi-Wan is likely the most well-rounded Jedi, with strong defensive and
+offensive capabilities that are almost guaranteed to get &lt;em>better&lt;/em> over time with
+future access to medics. Go ahead and re-read &lt;a href="#luke">Luke Skywalker&lt;/a>, and then
+apply the following.&lt;/p>
+&lt;p>In comparison to Vader:&lt;/p>
+&lt;ul>
+&lt;li>Obi-Wan has three &lt;em>excellent&lt;/em> command cards offering extreme amount of army
+synergy with &lt;a href="https://starwarslegion.fandom.com/wiki/Knowledge_and_Defense">Knowledge and Defense&lt;/a> and &lt;a href="https://starwarslegion.fandom.com/wiki/General_Kenobi">General Kenobi&lt;/a>, and one of the
+best 1-pips in the game: &lt;a href="https://starwarslegion.fandom.com/wiki/Hello_There">Hello There&lt;/a>. Imagine if Obi-Wan needed to injure
+himself and throw his taken &lt;em>back&lt;/em> in the order pool to get this effect?&lt;/li>
+&lt;li>The Clone faction has plenty of access to strong, independent units that don&amp;rsquo;t
+rely on a specific commander to play reasonable. That means that Obi-Wan, like
+probably &lt;em>any&lt;/em> GAR commander, can rely more on the army list than Vader can.&lt;/li>
+&lt;/ul>
+&lt;p>Ironically, Obi-Wan is mostly held back by the large amounts of synergy and
+objective playing power offered by the vastly cheaper &lt;a href="https://starwarslegion.fandom.com/wiki/Clone_Captain_Rex">Clone Captain Rex&lt;/a>,
+and is an excellent first commander experience for players.&lt;/p>
+&lt;h3 id="palpatine">Emperor Palpatine&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/emperor-palpatine.png"
+alt="Emperor Palpatine: I guess there is a reason he&amp;amp;rsquo;s the master?"/> &lt;figcaption>
+&lt;p>Emperor Palpatine: I guess there is a reason he&amp;rsquo;s the master?&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Palpatine isn&amp;rsquo;t a core-box commander, but he&amp;rsquo;s currently one of two Sith options
+for Empire, and is a &lt;strong>bonus&lt;/strong> comparison. This one is particularly interesting,
+as Palpatine is &lt;em>also&lt;/em> the other &lt;code>Speed: 1&lt;/code> commander.&lt;/p>
+&lt;p>In comparison to Vader:&lt;/p>
+&lt;ul>
+&lt;li>Palpatine&amp;rsquo;s defensive capabilities thanks to a native &lt;code>Surge: Block&lt;/code>, the
+Imperial Royal Guards with &lt;code>Entourage&lt;/code>, and &lt;a href="https://starwarslegion.fandom.com/wiki/Give_in_to_Your_Anger">Give in to Your Anger&lt;/a> as the
+ultimate interrupt help him stay comparable to Vader.&lt;/li>
+&lt;li>If you manage to stay healthy (or take advantage of medics),
+&lt;a href="https://starwarslegion.fandom.com/wiki/And_Now..._You_Will_Die">And Now&amp;hellip; You Will Die&lt;/a> can easily make up for doing less during the first
+several rounds of the game. It&amp;rsquo;s not uncommon for this card to win the game.&lt;/li>
+&lt;li>A command slot (&amp;ldquo;Aggressive Tactics&amp;rdquo;) combined with &lt;a href="https://starwarslegion.fandom.com/wiki/An_Entire_Legion">An Entire Legion&lt;/a> and
+&lt;code>Pulling the Strings&lt;/code> offers a decent amount of army synergy, helping make up
+for Palpatine&amp;rsquo;s otherwise minimal mobility.&lt;/li>
+&lt;/ul>
+&lt;p>Palpatine has won several major events despite being a trickier play than say
+&lt;a href="#luke">Luke Skywalker&lt;/a>, but is definitely getting tougher to play with the
+increase in high-volume long-range attacks. However, he&amp;rsquo;s still looking better
+than Vader!&lt;/p>
+&lt;h3 id="dooku">Count Dooku&lt;/h3>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/count-dooku.jpg"
+alt="Count Dooku: Or, what if Vader was actually scary to other Jedi?"/> &lt;figcaption>
+&lt;p>Count Dooku: Or, what if Vader was actually scary to other Jedi?&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Dooku isn&amp;rsquo;t a core-box commander, but comparisons are still made, so this one is
+a &lt;strong>bonus&lt;/strong>. Dooku is much more of a control piece than Vader, less reliant on
+getting in melee - but once he does he has the potential to be just as scary.&lt;/p>
+&lt;p>In comparison to Vader:&lt;/p>
+&lt;ul>
+&lt;li>Count Dooku has three &lt;em>excellent&lt;/em> command cards patching up vulnerabilities in
+his kit: &lt;a href="https://starwarslegion.fandom.com/wiki/Fear,_Surprise,_Intimidation">Fear, Surprise, Intimidation&lt;/a> can deliver an 8-dice pierce 3
+range 2 attack, or even just be used in melee to split attack saber/lightning,
+&lt;a href="https://starwarslegion.fandom.com/wiki/Double_the_Fall">Double the Fall&lt;/a> can disable another threat at range-2, all but
+guaranteeing Dooku &lt;em>still&lt;/em> goes first thank to strong Droid synergy, and
+&lt;a href="https://starwarslegion.fandom.com/wiki/You_Disappoint_Me">You Disappoint Me&lt;/a> helps Dooku close the gap and up his defenses.&lt;/li>
+&lt;li>A combination of &lt;code>Cunning&lt;/code> and &lt;code>Makashi Mastery&lt;/code> gives Dooku the edge against
+most other lightsaber wielders. If you manage an attack on already injured
+unit, Dooku can often land the kill, even if they have &lt;code>Immune: Pierce&lt;/code>.&lt;/li>
+&lt;li>A &lt;em>command&lt;/em> slot, just like with Grevious, can basically read
+&amp;ldquo;Aggressive Tactics&amp;rdquo;, which in turn can read &amp;ldquo;give out 4 surge tokens every
+turn&amp;rdquo;. This can even help Dooku with an activation-phase defensive bonus.&lt;/li>
+&lt;li>I find the speed 2 versus speed 1 comparison still quite important; Dooku&amp;rsquo;s
+ability to position in early turns can be significantly better, and the built
+in range 2 force lightning is much more threatening than saber throw.&lt;/li>
+&lt;/ul>
+&lt;p>Dooku is definitely a bit harder to play than some of the other commanders in
+this list, but it&amp;rsquo;s hard &lt;em>not&lt;/em> to look longingly over to the other side of the
+table in the Vader versus Dooku matchup.&lt;/p>
+&lt;h3 id="whats-coming-next">What&amp;rsquo;s coming next&lt;/h3>
+&lt;p>We don&amp;rsquo;t even know the full potential or stats of upcoming heroes like
+&lt;a href="https://www.fantasyflightgames.com/en/products/star-wars-legion/products/anakin-skywalker-commander-expansion/">Anakin Skywalker&lt;/a> or &lt;a href="https://www.fantasyflightgames.com/en/products/star-wars-legion/products/darth-maul-and-sith-probe-droids-operative-expansion/">Darth Maul&lt;/a>, but it&amp;rsquo;s almost guaranteed they are
+going to be play better than our Dark Lord.&lt;/p>
+&lt;h2 id="turn-6">You need to play 6 turns&lt;/h2>
+&lt;p>Even after all of these comparisons, it is &lt;em>still&lt;/em> possible to play a halfway
+decent Darth Vader, and to win in competitive events (though I&amp;rsquo;d argue the
+ability to do so &lt;em>reliably&lt;/em>, if that matters for you, is fairly low). However,
+there this is a big &lt;strong>caveat&lt;/strong>: you have to play six turns.&lt;/p>
+&lt;p>Look back and think about the last 3-4 timed games you&amp;rsquo;ve played (as are common
+in FLGS with early closing hours or tournaments trying to fit in many games on
+a tight schedule). Every game you didn&amp;rsquo;t make it to turn 6 (or even worse,
+turn 5) is probably a game where Vader would have done next to nothing.&lt;/p>
+&lt;p>Thanks to Vader&amp;rsquo;s lack of speed and mobility, you&amp;rsquo;re mostly reliant on slowly
+moving up the board as safely as you can until you position for a devastating
+last couple turns. But if there &lt;em>are&lt;/em> no last couple turns, he is capable of
+effectively doing &lt;em>nothing&lt;/em> - that is, taking someone like &lt;a href="https://starwarslegion.fandom.com/wiki/Iden_Versio">Iden Versio&lt;/a> and
+a few supporting cast members is &lt;em>blanket&lt;/em> better, unconditionally.&lt;/p>
+&lt;p>So, tl;dr: Make sure you are making it to turn 6.&lt;/p>
+&lt;h2 id="what-about-operative-vader">What about Operative Vader&lt;/h2>
+&lt;figure>
+&lt;img src="https://lurey.dev/vader/operative-vader.jpg"
+alt="Operative Vader: You can now further harm yourself to play like other units"/> &lt;figcaption>
+&lt;p>Operative Vader: You can now further harm yourself to play like other units&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>For the most part, I think operative Vader is not worth playing currently; the
+only real benefit you gain is the ability to &lt;code>Spur&lt;/code>, or suppress yourself to
+make a speed-2 move (i.e. what nearly every other unit gets for free), at the
+high cost of less health, needing another commander, a weaker attack, and more.&lt;/p></description></item><item><title>A New Hope</title><link>https://lurey.dev/posts/welcome/</link><pubDate>Fri, 07 Aug 2020 12:48:03 -0700</pubDate><guid>https://lurey.dev/posts/welcome/</guid><description>&lt;p>&lt;img src="https://lurey.dev/lego_landspeeder.jpg" alt="Lego Star Wars Landspeeder">&lt;/p>
 &lt;p>It&amp;rsquo;s a few months into the COVID 19 quarantine, where I&amp;rsquo;m perpetually stuck in
 permanent WFH (&amp;ldquo;work from home&amp;rdquo;), and I&amp;rsquo;ve decided to take the opportunity to
 restart my blog. I&amp;rsquo;ve had a blog in the past, and used it to talk about tech,

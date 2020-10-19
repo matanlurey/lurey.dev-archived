@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Lurey dot Dev</title><link>https://lurey.dev/posts/</link><description>Lurey dot Dev (Posts)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Oct 2020 11:06:26 -0700</lastBuildDate><atom:link href="https://lurey.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>The Tragedy of Darth Vader</title><link>https://lurey.dev/posts/the-tragedy-of-darth-vader/</link><pubDate>Sun, 18 Oct 2020 11:06:26 -0700</pubDate><guid>https://lurey.dev/posts/the-tragedy-of-darth-vader/</guid><description>&lt;p>&lt;img src="https://lurey.dev/darth-vader-flowers.jpg" alt="Darth Vader Holding a Purple Flower Bouquet">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Star Wars Legion on Lurey dot Dev</title><link>https://lurey.dev/tags/star-wars-legion/</link><description>Lurey dot Dev (Star Wars Legion)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Oct 2020 11:06:26 -0700</lastBuildDate><atom:link href="https://lurey.dev/tags/star-wars-legion/index.xml" rel="self" type="application/rss+xml"/><item><title>The Tragedy of Darth Vader</title><link>https://lurey.dev/posts/the-tragedy-of-darth-vader/</link><pubDate>Sun, 18 Oct 2020 11:06:26 -0700</pubDate><guid>https://lurey.dev/posts/the-tragedy-of-darth-vader/</guid><description>&lt;p>&lt;img src="https://lurey.dev/darth-vader-flowers.jpg" alt="Darth Vader Holding a Purple Flower Bouquet">&lt;/p>
 &lt;p>A little known fact is that &lt;a href="https://en.wikipedia.org/wiki/Darth_Vader">Darth Vader&lt;/a>, the primary antagonist in the
 original Star Wars trilogy (and a primary protagonist in the prequel trilogy)
 has been referred to by no other than George Lucas as the center-point of the
@@ -489,23 +489,4 @@ alt="Operative Vader: You can now further harm yourself to play like other units
 &lt;p>For the most part, I think operative Vader is not worth playing currently; the
 only real benefit you gain is the ability to &lt;code>Spur&lt;/code>, or suppress yourself to
 make a speed-2 move (i.e. what nearly every other unit gets for free), at the
-high cost of less health, needing another commander, a weaker attack, and more.&lt;/p></description></item><item><title>A New Hope</title><link>https://lurey.dev/posts/welcome/</link><pubDate>Fri, 07 Aug 2020 12:48:03 -0700</pubDate><guid>https://lurey.dev/posts/welcome/</guid><description>&lt;p>&lt;img src="https://lurey.dev/lego_landspeeder.jpg" alt="Lego Star Wars Landspeeder">&lt;/p>
-&lt;p>It&amp;rsquo;s a few months into the COVID 19 quarantine, where I&amp;rsquo;m perpetually stuck in
-permanent WFH (&amp;ldquo;work from home&amp;rdquo;), and I&amp;rsquo;ve decided to take the opportunity to
-restart my blog. I&amp;rsquo;ve had a blog in the past, and used it to talk about tech,
-politics, and nerd culture, but I haven&amp;rsquo;t maintained anything serious in years.&lt;/p>
-&lt;p>I think writing a blog will help me focus on my side projects - giving me a
-reason to have something close to &amp;ldquo;deliverables&amp;rdquo; (i.e. I need to be able to
-produce &lt;em>something&lt;/em> visible to be able to blog about it), as well as an outlet
-to write on something that isn&amp;rsquo;t Twiter or personal Discord(s).&lt;/p>
-&lt;p>Originally I thought about creating separate blogs for separate topics, but I
-want to reduce the barrier of me writing to an absolute minimum - my goal here
-isn&amp;rsquo;t to get a hundred readers, I just want to write a hundred posts. So if
-you&amp;rsquo;re reading this (thanks!), know that I am unlikely to be consistent, but
-will try to &amp;ldquo;tag&amp;rdquo; content to make it skippable.&lt;/p>
-&lt;p>If you&amp;rsquo;re interested in how I&amp;rsquo;m developing this blog - it&amp;rsquo;s fairly simple but
-does require a bit of a technical background - e.g. more than creating an
-account on &lt;a href="https://www.blogger.com/">Blogger&lt;/a> or (ugh) &lt;a href="https://medium.com/">Medium&lt;/a>. I&amp;rsquo;m using &lt;a href="https://gohugo.io/">Hugo&lt;/a>, a self-hosted
-site-generation platform that uses &lt;a href="https://www.markdownguide.org/">Markdown&lt;/a> files and in my case, is hosted
-directly on &lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github Pages&lt;/a>.&lt;/p>
-&lt;p>If you&amp;rsquo;re interested in creating your own similar blog, take a look at the &lt;a href="https://gohugo.io/getting-started/quick-start/">Hugo &amp;ldquo;Quick Start&amp;rdquo;&lt;/a>. Cheers!&lt;/p></description></item></channel></rss>
+high cost of less health, needing another commander, a weaker attack, and more.&lt;/p></description></item></channel></rss>
