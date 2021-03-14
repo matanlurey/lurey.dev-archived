@@ -1,0 +1,78 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=HandheldFriendly content="True"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=referrer content="no-referrer-when-downgrade"><title>Getting Started With Godot and VSCode - Lurey dot Dev</title><meta name=description content="Tech and Culture Musings"><link rel=icon type=image/x-icon href=https://lurey.dev/favicon.ico><link rel=apple-touch-icon-precomposed href=https://lurey.dev/favicon.png><link rel=stylesheet href="https://lurey.dev/css/style.css?rnd=1615757329"><meta property="og:title" content="Getting Started With Godot and VSCode"><meta property="og:description" content="It&rsquo;s been a while since I wrote anything: it&rsquo;s not that I haven&rsquo;t been writing,
+but rather I&rsquo;ve created a split-off community-run blog for Star Wars: Legion,
+and it&rsquo;s taken a bit of time to want to come back to general blogging.
+I&rsquo;ve been thinking about creating a new game/project, mostly as a learning
+experience, and partially as something to do during this perpetual WFH period.
+Instead of reflexively falling back on a technology I&rsquo;m comfortable with (i.e.
+React/TSX or Dart/Flutter), I&rsquo;ve decided to try out Godot, an open source
+and full-featured game engine with both 2D and 3D support.
+Of course, I wasn&rsquo;t fully satisfied with learning or using GDScript - it
+seems interesting enough, but I wanted to use a statically typed high-level
+language, and I wanted to use VSCode - so this is a good opportunity for C#."><meta property="og:type" content="article"><meta property="og:url" content="https://lurey.dev/posts/getting-started-with-godot-and-vscode/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-03-14T13:36:50-07:00"><meta property="article:modified_time" content="2021-03-14T13:36:50-07:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Getting Started With Godot and VSCode"><meta name=twitter:description content="It&rsquo;s been a while since I wrote anything: it&rsquo;s not that I haven&rsquo;t been writing,
+but rather I&rsquo;ve created a split-off community-run blog for Star Wars: Legion,
+and it&rsquo;s taken a bit of time to want to come back to general blogging.
+I&rsquo;ve been thinking about creating a new game/project, mostly as a learning
+experience, and partially as something to do during this perpetual WFH period.
+Instead of reflexively falling back on a technology I&rsquo;m comfortable with (i.e.
+React/TSX or Dart/Flutter), I&rsquo;ve decided to try out Godot, an open source
+and full-featured game engine with both 2D and 3D support.
+Of course, I wasn&rsquo;t fully satisfied with learning or using GDScript - it
+seems interesting enough, but I wanted to use a statically typed high-level
+language, and I wanted to use VSCode - so this is a good opportunity for C#."></head><body><a class=skip-main href=#main>Skip to main content</a><div class=container><header><h1 class=site-header><a href=https://lurey.dev/>Lurey dot Dev: Tech and Culture Musings</a></h1><nav></nav></header><main id=main tabindex=-1><article class=post><header><h1>Getting Started With Godot and VSCode</h1></header><div class=content><p>It&rsquo;s been a while since I wrote anything: it&rsquo;s not that I haven&rsquo;t been writing,
+but rather I&rsquo;ve created a split-off community-run blog for Star Wars: Legion,
+and it&rsquo;s taken a bit of time to want to come back to general blogging.</p><p>I&rsquo;ve been thinking about creating a new game/project, mostly as a learning
+experience, and partially as something to do during this perpetual WFH period.
+Instead of reflexively falling back on a technology I&rsquo;m comfortable with (i.e.
+React/TSX or Dart/Flutter), I&rsquo;ve decided to try out <a href=https://godotengine.org/>Godot</a>, an open source
+and full-featured game engine with both 2D and 3D support.</p><p>Of course, I wasn&rsquo;t fully satisfied with learning or using <a href=https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_basics.html>GDScript</a> - it
+seems interesting enough, but I wanted to use a statically typed high-level
+language, and I wanted to use VSCode - so this is a good opportunity for <a href=https://docs.godotengine.org/en/stable/getting_started/scripting/c_sharp/index.html>C#</a>.</p><hr><h2 id=installation>Installation</h2><p>I&rsquo;m a fan of the package manager <a href=https://scoop-docs.now.sh/>Scoop</a>, a simple command-line installer:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>scoop add extras
+scoop install godot-mono
+scoop install mono
+</code></pre></div><p>A few minutes later, Godot and Mono were installed. You can also install them
+with <code>.exe</code> installers available on their site, but that&rsquo;s totally your choice.
+I already had <a href=https://code.visualstudio.com/>VSCode</a> installed, but if you don&rsquo;t have it, I recommend it.</p><p>You&rsquo;ll need the following <em>extensions</em> for VSCode:</p><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C# for Visual Studio Code</a></li><li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug">Mono Debug</a></li><li><a href="https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools">Godot Tools</a></li></ul><h2 id=create-a-new-project>Create a new project</h2><p>Open the <em>Godot Editor</em>, and hit <strong>New Project</strong>. I called mine
+<code>GodotRogueDemo</code>.</p><p>I did nothing else within the <em>Godot Editor</em>, and then opened the newly created
+folder in VSCode, and hit <code>F1</code> - this opens the quick launcher for VSCode, and
+I typed <strong>Godot > Godot Tools: Open workspace with Godot Editor</strong>.</p><p>You&rsquo;ll then need, once, to tell the VSCode extension where <em>Godot</em> is installed.
+Fortunately due to using <code>scoop</code>, this is a canonical location - so for me it
+was <code>C:\Users\Matan\scoop\apps\godot-mono\current\godot.exe</code>, but you might have
+it installed elsewhere.</p><h2 id=create-a-scene-and-sprite>Create a scene and sprite</h2><p>I created a new 2D scene, and dragged an instance of <code>icon.png</code> over, and then
+hit <strong>Right Click -> Attach Script</strong>, and chose <strong>C#</strong>. The script ending up
+looking like this:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=color:#66d9ef>using</span> Godot;
+
+<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Icon</span> : Sprite
+{
+  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> _Ready()
+  {
+    GD.Print(<span style=color:#e6db74>&#34;Hello World&#34;</span>);
+  }
+}
+</code></pre></div><p>To make debugging available in VSCode, I went, in the Godot Editor, to
+<strong>Project > Project Settings</strong>, scrolled down to <strong>Mono > Debugger Agent</strong>, and
+enabled the checkbox <strong>Wait for Debugger</strong>. I also bumped the timeout to <code>10000</code>
+and copied the port to reference in VSCode (mine was <code>23685</code>).</p><p>Back into VSCode, I went into the <strong>Run and Debug</strong> menu, and created a new
+configuration for <strong>C# Mono</strong> - my <code>launch.json</code> looks like this, but yours will
+likely look very similar:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;version&#34;</span>: <span style=color:#e6db74>&#34;0.2.0&#34;</span>,
+  <span style=color:#f92672>&#34;configurations&#34;</span>: [
+    {
+      <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;Launch&#34;</span>,
+      <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;mono&#34;</span>,
+      <span style=color:#f92672>&#34;request&#34;</span>: <span style=color:#e6db74>&#34;launch&#34;</span>,
+      <span style=color:#f92672>&#34;program&#34;</span>: <span style=color:#e6db74>&#34;${workspaceRoot}/program.exe&#34;</span>,
+      <span style=color:#f92672>&#34;cwd&#34;</span>: <span style=color:#e6db74>&#34;${workspaceRoot}&#34;</span>
+    },
+    {
+      <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;Attach&#34;</span>,
+      <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;mono&#34;</span>,
+      <span style=color:#f92672>&#34;request&#34;</span>: <span style=color:#e6db74>&#34;attach&#34;</span>,
+      <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;localhost&#34;</span>,
+      <span style=color:#f92672>&#34;port&#34;</span>: <span style=color:#ae81ff>23685</span>
+    }
+  ]
+}
+</code></pre></div><p>Save your scene and script, and now it is possible to launch your Godot demo
+project, and attach the debugger from VSCode. This isn&rsquo;t a completely seamless
+experience (I&rsquo;m hoping to mess around with <code>launch.json</code> more in the near future
+and create a specific &ldquo;debug&rdquo; task that automates much of this), but it works!</p><p><img src=https://user-images.githubusercontent.com/168174/111084722-090fe500-84d1-11eb-891e-ddf1d8fd2390.png alt=Demo></p></div><div class=article-info><div class=article-date>2021-03-14</div><div class=article-taxonomies></div></div></article></main><footer><p>© Matan Lurey, 2021<br>Powered by <a target=_blank href=https://gohugo.io/>Hugo</a>, theme <a target=_blank href=https://github.com/mitrichius/hugo-theme-anubis>Anubis</a>.</p></footer></div></body></html>
