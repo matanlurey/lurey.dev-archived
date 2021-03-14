@@ -16,13 +16,13 @@ politics, and nerd culture, but I haven't maintained anything serious in years.
 I think writing a blog will help me focus on my side projects - giving me a
 reason to have something close to "deliverables" (i.e. I need to be able to
 produce _something_ visible to be able to blog about it), as well as an outlet
-to write on something that isn't Twiter or personal Discord(s).
+to write on something that isn't Twitter or personal Discord(s).
 
 Originally I thought about creating separate blogs for separate topics, but I
 want to reduce the barrier of me writing to an absolute minimum - my goal here
 isn't to get a hundred readers, I just want to write a hundred posts. So if
 you're reading this (thanks!), know that I am unlikely to be consistent, but
-will try to "tag" content to make it skippable.
+will try to "tag" content to make it skip-able.
 
 If you're interested in how I'm developing this blog - it's fairly simple but
 does require a bit of a technical background - e.g. more than creating an

@@ -3,5 +3,8 @@
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
   },
-  "prettier.disableLanguages": ["html"]
+  "cSpell.words": [
+    "COVID",
+    "Landspeeder"
+  ]
 }
