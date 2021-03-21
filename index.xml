@@ -1,4 +1,245 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lurey dot Dev</title><link>https://lurey.dev/</link><description>Lurey dot Dev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Mar 2021 13:36:50 -0700</lastBuildDate><atom:link href="https://lurey.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started With Godot and VSCode</title><link>https://lurey.dev/posts/getting-started-with-godot-and-vscode/</link><pubDate>Sun, 14 Mar 2021 13:36:50 -0700</pubDate><guid>https://lurey.dev/posts/getting-started-with-godot-and-vscode/</guid><description>&lt;p>It&amp;rsquo;s been a while since I wrote anything: it&amp;rsquo;s not that I haven&amp;rsquo;t been writing,
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lurey dot Dev</title><link>https://lurey.dev/</link><description>Lurey dot Dev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 21 Mar 2021 15:34:30 -0700</lastBuildDate><atom:link href="https://lurey.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Advanced TTS Mods on Github</title><link>https://lurey.dev/posts/advanced-tts-mods-on-github/</link><pubDate>Sun, 21 Mar 2021 15:34:30 -0700</pubDate><guid>https://lurey.dev/posts/advanced-tts-mods-on-github/</guid><description>&lt;p>I&amp;rsquo;ve been working on the &lt;a href="https://github.com/swlegion/tts">Star Wars Legion Tabletop Simulator Mod&lt;/a> in some
+capacity for almost &lt;strong>2&lt;/strong> years now. For those not familiar, Star Wars Legion is
+a fairly complex tabletop miniatures game somewhat similar to Warhammer 40K and
+similar titles - it is a quasi turn-based tactical game with &lt;em>lots&lt;/em> of rules,
+tokens, minis, and various fiddly bits.&lt;/p>
+&lt;p>&lt;img src="https://user-images.githubusercontent.com/168174/111917323-922c9c00-8a3c-11eb-8508-f7f0027ccebc.png" alt="An example of the game in action">&lt;/p>
+&lt;p>One of the goals originally for this project was that I wanted it to be as
+collaborative as possible - i.e. be able to support multiple different people
+contributing in different capacities - including scripting and re-designing the
+table.&lt;/p>
+&lt;p>However, I quickly found out that having more than one person making edits to
+a monolithic (at the time, 20Mb) JSON file (the format of save files/mod files
+for Tabletop Simulator) was not scaling, and, as a result, designed a whole
+custom system of tools that I wanted to share with the community.&lt;/p>
+&lt;hr>
+&lt;h2 id="why-use-source-control">Why use source control&lt;/h2>
+&lt;p>I realize not all of my audience is going to understand all of the various
+acronyms and technology being used in this blog. In a perfect world, I&amp;rsquo;d have
+unlimited time to explain everything, but here is a quick rundown.&lt;/p>
+&lt;p>In the beginning, &amp;ldquo;shared&amp;rdquo; control of files (in this case, a TTS Save File) was
+largely manual. If you&amp;rsquo;ve worked in a professional setting for at least 10 years
+you probably remember (or still see!) files like &lt;code>TPS-REPORT-v5-FINAL.doc&lt;/code>. I
+like to compare this (manual) version control to PBEM (&lt;a href="https://en.wikipedia.org/wiki/Play-by-mail_game">Play-by-mail game&lt;/a>),
+and this is sort of the &amp;ldquo;obvious&amp;rdquo; first step for collaborating on a TTS mod.&lt;/p>
+&lt;p>At some point, you might make the jump to a shared &lt;em>Google Drive&lt;/em> or &lt;em>Dropbox&lt;/em>
+(or whatever is the hotness right now in shared file hosting), perhaps with a
+fancy auto-synchronization rule. This alleviates the need to explicitly share
+(and receive) updates for the mod, but isn&amp;rsquo;t truly collaborative - it ends up
+being a locking-style of version control, where effectively only one person can
+make edits at a time.&lt;/p>
+&lt;p>Using a version control system (source control) like &lt;a href="https://git-scm.com/">Git&lt;/a> or &lt;a href="https://www.mercurial-scm.org/">Mercurial&lt;/a>
+provides a lot of additional benefits - you can see the history of files, you
+can revert (sometimes called &amp;ldquo;rollback&amp;rdquo;) to earlier versions, and, if done well,
+you can often make simultaneous edits to the same file(s), especially ones that
+are mostly human-readable (think: text files, not images or binary files).&lt;/p>
+&lt;p>Additionally, there are existing popular communities, like &lt;a href="https://github.com">GitHub&lt;/a>, where
+you can host your source code for free, and use a lot of free web-based tools
+to collaborate. For example, NASA (yes, &lt;em>the&lt;/em> NASA) hosts their Open MCT
+dashboard on GitHub: &lt;a href="https://github.com/nasa/openmct">https://github.com/nasa/openmct&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://user-images.githubusercontent.com/168174/111923604-31618b80-8a5d-11eb-80af-772bc8c7af37.png" alt="History of OpenMCT">&lt;/p>
+&lt;h2 id="the-problems-with-source-control-and-tts">The problems with source control and TTS&lt;/h2>
+&lt;p>If you&amp;rsquo;ve made it this far, you might be asking yourself - OK, that all sounds
+interesting - or maybe if you a prior user of Git/GitHub might not understand
+exactly why Tabletop Simulator is &lt;em>not&lt;/em> a natural fit. Well, that&amp;rsquo;s because of
+the &lt;em>save file format&lt;/em> of TTS itself - it&amp;rsquo;s a huge monolithic JSON file.&lt;/p>
+&lt;p>Here are the first ~30 or so lines of over 50K lines of the mod I maintain:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;span style="color:#f92672">&amp;#34;SaveName&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;StarWarsLegion&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;GameMode&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Star Wars: Legion&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Date&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;3/5/2021 11:16:45 AM&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;VersionNumber&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;v13.0.5&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;GameType&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;GameComplexity&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Tags&amp;#34;&lt;/span>: [],
+&lt;span style="color:#f92672">&amp;#34;Gravity&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">0.5&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;PlayArea&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">0.5&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Table&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Table_None&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Sky&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Sky_Museum&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Rules&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Grid&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;Type&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Lines&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Color&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;r&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">0.0&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;g&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">0.0&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;b&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">0.0&lt;/span>
+},
+&lt;span style="color:#f92672">&amp;#34;Opacity&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">0.75&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;ThickLines&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Snapping&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;Offset&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;BothSnapping&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;xSize&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">6.0&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;ySize&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">6.0&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;PosOffset&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;x&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">2.0&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;y&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">1.0&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;z&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">0.0&lt;/span>
+}
+}
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>As soon as more than one person (or even just one person, if you use
+&lt;a href="https://guides.github.com/introduction/flow/">feature branching&lt;/a> as a strategy) are working on the mod concurrently, you
+now have a problem - how can you tell if an edit is incompatible with another
+one? For a while, the answer was &amp;ldquo;I did it manually&amp;rdquo;. This was a rough process,
+and often required patching, re-patching, manual testing, and sometimes even
+partial rewrites of contributed features.&lt;/p>
+&lt;p>Despite adding 2 more developers to our open source team we were spending more
+and more time merging changes and less and less time contributing features and
+bug fixes:&lt;/p>
+&lt;p>&lt;img src="https://user-images.githubusercontent.com/168174/111923817-41c63600-8a5e-11eb-999f-bc920c0398d0.png" alt="A typical edit">&lt;/p>
+&lt;p>So, I developed a system of free open-source NodeJS packages to try and solve
+our workflow problems, and to work collaboratively on GitHub, together, like
+a typical open source project. I went through many iterations, and landed on
+a series of disjoint packages.&lt;/p>
+&lt;blockquote>
+&lt;p>🔥 &lt;strong>Why NodeJS?&lt;/strong>&lt;/p>
+&lt;p>The short answer is I wanted to choose a language (JavaScript) where I thought
+non-developers would have the best chance of understanding and using what I
+made - that meant &amp;ldquo;fun&amp;rdquo; languages like Rust/Go/Kotlin were all out of
+question.&lt;/p>
+&lt;p>If you like my approach, but have a favorite language you&amp;rsquo;d like to write
+tools in know that nothing here &lt;em>requires&lt;/em> JavaScript (or Node), but of course
+if you want use my packages as-is you&amp;rsquo;ll need them.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="enter-tts-save-files--tts-expander">Enter &lt;code>tts-save-files&lt;/code> &amp;amp; &lt;code>tts-expander&lt;/code>&lt;/h2>
+&lt;p>The first package I developed was called &lt;a href="https://github.com/matanlurey/tts-save-format">&lt;code>tts-save-files&lt;/code>&lt;/a>. This is, to be
+honest, the most boring package - I created a series of JSON Schema files to
+describe the metadata format of Tabletop Simulator save files:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;span style="color:#f92672">&amp;#34;$id&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;https://tts.swlegion.dev/CameraState.json&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;$schema&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;http://json-schema.org/draft-07/schema&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;title&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;CameraState&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;type&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;object&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;properties&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;Position&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;$ref&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;./VectorState.json&amp;#34;&lt;/span>
+},
+&lt;span style="color:#f92672">&amp;#34;Rotation&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;$ref&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;./VectorState.json&amp;#34;&lt;/span>
+},
+&lt;span style="color:#f92672">&amp;#34;Distance&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;type&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;number&amp;#34;&lt;/span>
+},
+&lt;span style="color:#f92672">&amp;#34;Zoomed&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;type&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;boolean&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;default&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+},
+&lt;span style="color:#f92672">&amp;#34;AbsolutePosition&amp;#34;&lt;/span>: {
+&lt;span style="color:#f92672">&amp;#34;$ref&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;./VectorState.json&amp;#34;&lt;/span>
+}
+},
+&lt;span style="color:#f92672">&amp;#34;additionalProperties&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;required&amp;#34;&lt;/span>: [&lt;span style="color:#e6db74">&amp;#34;Position&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;Rotation&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;Distance&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;Zoomed&amp;#34;&lt;/span>]
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;hellip; and using the &lt;a href="https://www.npmjs.com/package/json-schema-to-typescript">&lt;code>json-schema-to-typescript&lt;/code>&lt;/a> package, auto-generated
+TypeScript definition files to use in future tooling:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ts" data-lang="ts">&lt;span style="color:#75715e">/* Generated from CameraState.json */&lt;/span>
+&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">CameraState&lt;/span> {
+&lt;span style="color:#a6e22e">Position&lt;/span>: &lt;span style="color:#66d9ef">VectorState&lt;/span>;
+&lt;span style="color:#a6e22e">Rotation&lt;/span>: &lt;span style="color:#66d9ef">VectorState&lt;/span>;
+&lt;span style="color:#a6e22e">Distance&lt;/span>: &lt;span style="color:#66d9ef">number&lt;/span>;
+&lt;span style="color:#a6e22e">Zoomed&lt;/span>: &lt;span style="color:#66d9ef">boolean&lt;/span>;
+&lt;span style="color:#a6e22e">AbsolutePosition?&lt;/span>: &lt;span style="color:#66d9ef">VectorState&lt;/span>;
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This whole project made me much more familiar with the Tabletop Simulator
+save file format, so even though it ended up not strictly being necessary, it
+was a fun project and has been relatively stable.&lt;/p>
+&lt;p>Next I created &lt;a href="https://github.com/matanlurey/tts-expander">&lt;code>tts-expander&lt;/code>&lt;/a>, the &amp;ldquo;meat and potatoes&amp;rdquo; of this approach:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-md" data-lang="md">The goals of this library are:
+&lt;span style="color:#66d9ef">-&lt;/span> Avoid storing a giant monolithic &lt;span style="color:#e6db74">`JSON`&lt;/span> blob in version control (i.e. GitHub).
+&lt;span style="color:#66d9ef">-&lt;/span> Ease collaboration and code reviews of changes.
+&lt;span style="color:#66d9ef">-&lt;/span> Make it easier to hand-edit files/properties/scripts when desired.
+&lt;span style="color:#66d9ef">-&lt;/span> Allow the development of more advanced editors and tooling for modding.
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Basically, it takes a single &lt;code>TableTopSave.json&lt;/code>, and generates up to 100s of
+standalone &lt;code>.json&lt;/code> (and &lt;code>.lua&lt;/code>) files, in a directory structure that mirrors
+the original file, and retains some extra metadata:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;span style="color:#f92672">&amp;#34;ContainedObjectPaths&amp;#34;&lt;/span>: [
+&lt;span style="color:#e6db74">&amp;#34;Roll_Out.f33bcc.json&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;Hemmed_In.df6ba7.json&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;Danger_Close.4c75d5.json&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;Battle_Lines.3ac84e.json&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;The_Long_March.88029d.json&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;Major_Offensive.b758f8.json&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;Disarray.4369e7.json&amp;#34;&lt;/span>,
+&lt;span style="color:#e6db74">&amp;#34;Advanced_Positions.919d08.json&amp;#34;&lt;/span>
+]
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This allows us to store &lt;em>every individual object&lt;/em> in a Tabletop Simulator save
+file as a &lt;em>separate&lt;/em> file, which means that if someone makes an edit &lt;em>just&lt;/em> to
+&lt;code>The_Long_March.88029d.json&lt;/code> it won&amp;rsquo;t have a source control conflict with any
+other part of the mod.&lt;/p>
+&lt;p>The tooling also provides the reverse functionality - taking a directory of
+&amp;ldquo;split&amp;rdquo; files and combining (&amp;ldquo;compiling&amp;rdquo;) them back into the single JSON file
+format the Tabletop Simulator expects. In our mod, you use &lt;code>npm run compile&lt;/code>.&lt;/p>
+&lt;p>With this approach, we now are able to collaborate and merge code without
+coordinating on who is making edits (at least, generally speaking), and it works
+a lot more like a typical open source project - we don&amp;rsquo;t even store the &amp;ldquo;full&amp;rdquo;
+JSON file anymore!&lt;/p>
+&lt;h2 id="making-it-better-tts-runner">Making it better: &lt;code>tts-runner&lt;/code>&lt;/h2>
+&lt;p>It would have been sensible to stop there, but I developed yet-another project
+to make our development workflow better, &lt;a href="https://github.com/matanlurey/tts-runner">&lt;code>tts-runner&lt;/code>&lt;/a> - which is a simple
+NodeJS library for automatically launching TTS (programmatically) and for
+finding the &amp;ldquo;Saves&amp;rdquo; folder (at least on Windows, more OS support will require
+contributions):&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ts" data-lang="ts">&lt;span style="color:#66d9ef">import&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#66d9ef">as&lt;/span> &lt;span style="color:#a6e22e">steam&lt;/span> &lt;span style="color:#66d9ef">from&lt;/span> &lt;span style="color:#e6db74">&amp;#34;@matanlurey/tts-runner/steam_finder&amp;#34;&lt;/span>;
+&lt;span style="color:#75715e">// An example of using tts-runner
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">async&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span> &lt;span style="color:#a6e22e">createSymlink&lt;/span>(&lt;span style="color:#a6e22e">homeDir?&lt;/span>: &lt;span style="color:#66d9ef">string&lt;/span>)&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">Promise&lt;/span>&amp;lt;&lt;span style="color:#f92672">string&lt;/span>&amp;gt; {
+&lt;span style="color:#75715e">// TODO: Add non-win32 support.
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> (&lt;span style="color:#f92672">!&lt;/span>&lt;span style="color:#a6e22e">homeDir&lt;/span>) {
+&lt;span style="color:#66d9ef">if&lt;/span> (&lt;span style="color:#a6e22e">os&lt;/span>.&lt;span style="color:#a6e22e">platform&lt;/span>() &lt;span style="color:#f92672">!==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;win32&amp;#34;&lt;/span>) {
+&lt;span style="color:#66d9ef">throw&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Error(&lt;span style="color:#e6db74">`Unsupported platform: &lt;/span>&lt;span style="color:#e6db74">${&lt;/span>&lt;span style="color:#a6e22e">os&lt;/span>.&lt;span style="color:#a6e22e">platform&lt;/span>()&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">`&lt;/span>);
+}
+&lt;span style="color:#a6e22e">homeDir&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">steam&lt;/span>.&lt;span style="color:#a6e22e">homeDir&lt;/span>.&lt;span style="color:#a6e22e">win32&lt;/span>(&lt;span style="color:#a6e22e">process&lt;/span>.&lt;span style="color:#a6e22e">env&lt;/span>);
+}
+&lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">destroySymlink&lt;/span>(&lt;span style="color:#a6e22e">homeDir&lt;/span>);
+&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">from&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">path&lt;/span>.&lt;span style="color:#a6e22e">join&lt;/span>(&lt;span style="color:#a6e22e">homeDir&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;Saves&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;TTSDevLink&amp;#34;&lt;/span>);
+&lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">fs&lt;/span>.&lt;span style="color:#a6e22e">symlink&lt;/span>(
+&lt;span style="color:#a6e22e">path&lt;/span>.&lt;span style="color:#a6e22e">resolve&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;dist&amp;#34;&lt;/span>),
+&lt;span style="color:#66d9ef">from&lt;/span>,
+&lt;span style="color:#a6e22e">os&lt;/span>.&lt;span style="color:#a6e22e">platform&lt;/span>() &lt;span style="color:#f92672">===&lt;/span> &lt;span style="color:#e6db74">&amp;#34;win32&amp;#34;&lt;/span> &lt;span style="color:#f92672">?&lt;/span> &lt;span style="color:#e6db74">&amp;#34;junction&amp;#34;&lt;/span> &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#34;dir&amp;#34;&lt;/span>
+);
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">from&lt;/span>;
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>With the above code, I automatically create a symbolic link pointing to the
+output of &lt;code>npm run compile&lt;/code> and place that link in the &lt;code>Saves&lt;/code> folder so that
+you can easily use Tabletop Simulator to load the &amp;ldquo;compiled&amp;rdquo; mod.&lt;/p>
+&lt;h2 id="going-even-further-tts-editor">Going even further: &lt;code>tts-editor&lt;/code>&lt;/h2>
+&lt;p>And of course, I wanted more, so I wrote &lt;a href="https://github.com/matanlurey/tts-editor">&lt;code>tts-editor&lt;/code>&lt;/a>, a NodeJS
+implementation of Tabletop Simulator&amp;rsquo;s &lt;a href="https://api.tabletopsimulator.com/externaleditorapi/">External Editor API&lt;/a>.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ts" data-lang="ts">(&lt;span style="color:#66d9ef">async&lt;/span> () &lt;span style="color:#f92672">=&amp;gt;&lt;/span> {
+&lt;span style="color:#75715e">// Create an API client and listen to incoming messages.
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">api&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> &lt;span style="color:#a6e22e">ExternalEditorApi&lt;/span>();
+&lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">api&lt;/span>.&lt;span style="color:#a6e22e">listen&lt;/span>();
+&lt;span style="color:#75715e">// You are now ready to send/receive messages.
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">api&lt;/span>.&lt;span style="color:#a6e22e">executeLuaCode&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;print(&amp;#34;Hello, World&amp;#34;)&amp;#39;&lt;/span>);
+})();
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Currently I use this library to automatically &amp;ldquo;reload&amp;rdquo; the mod on compile!&lt;/p>
+&lt;h2 id="some-unsolved-problems">Some unsolved problems&lt;/h2>
+&lt;p>I wish I could end with saying &amp;ldquo;here is a bullet-proof way of making a mod&amp;rdquo; with
+a simple template others could follow for success. Unfortunately, I didn&amp;rsquo;t have
+the free time (yet) to do this, but I&amp;rsquo;m hoping the steps in this blog can be
+followed by others, and I&amp;rsquo;m also happy to answer questions about it on
+&lt;a href="https://www.reddit.com/user/decafmatan">Reddit&lt;/a> or &lt;a href="mailto:blog@lurey.dev">via email&lt;/a>.
+Some unsolved problems I&amp;rsquo;d like to still resolve:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>TTS (and Unity) floating point numbers - whenever the save file is edited by
+TTS itself, floating point numbers will change - just a tiny bit - across the
+entire mod. These can normally just be ignored, but I&amp;rsquo;d love to build a script
+to do this automatically.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A way to run TTS, headless, on GitHub actions - I want to be able to, on every
+PR, take a screenshot or screen-cast of the mod running. This would add a nice
+low-bar test for contributions.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A standard Lua formatter that I can run on the command-line.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Getting Started With Godot and VSCode</title><link>https://lurey.dev/posts/getting-started-with-godot-and-vscode/</link><pubDate>Sun, 14 Mar 2021 13:36:50 -0700</pubDate><guid>https://lurey.dev/posts/getting-started-with-godot-and-vscode/</guid><description>&lt;p>It&amp;rsquo;s been a while since I wrote anything: it&amp;rsquo;s not that I haven&amp;rsquo;t been writing,
 but rather I&amp;rsquo;ve created a split-off community-run blog for Star Wars: Legion,
 and it&amp;rsquo;s taken a bit of time to want to come back to general blogging.&lt;/p>
 &lt;p>I&amp;rsquo;ve been thinking about creating a new game/project, mostly as a learning
